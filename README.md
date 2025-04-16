@@ -1,73 +1,118 @@
-# Welcome to your Lovable project
+# BRYNK LABS - Hiring Assignment
 
-## Project info
+## 📜 Overview
+This project is a **Hiring Assignment** for Brynk Labs, designed to demonstrate the ability to create a responsive website with dynamic content management capabilities. 
 
-**URL**: https://lovable.dev/projects/65b8c28f-6559-48af-a6ed-fcf5e68ad89c
+The assignment involves:
+1. Designing a **pixel-perfect landing page** based on the provided Figma design.
+2. Developing a **CMS (Content Management System)** for managing content dynamically.
+3. Implementing APIs to connect the CMS and the landing page.
 
-## How can I edit this code?
+---
 
-There are several ways of editing your application.
+## 🧩 Features
+### 🎨 Landing Page
+- **Pixel-perfect design**: Matches the Figma design exactly.
+- **Responsive layout**: Adapts to different screen sizes.
+- **Dynamic Heading**: The main heading on the page is fetched dynamically from a database via an API.
 
-**Use Lovable**
+### 🛠️ Content Management System (CMS)
+- User-friendly interface for managing the main heading.
+- A seamless connection between the CMS and the landing page.
+- Responsive and customizable design for the CMS page.
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/65b8c28f-6559-48af-a6ed-fcf5e68ad89c) and start prompting.
+### 🌐 APIs
+- **POST API**: Saves the heading text entered in the CMS to the database.
+- **GET API**: Retrieves the heading text from the database for the landing page.
 
-Changes made via Lovable will be committed automatically to this repo.
+---
 
-**Use your preferred IDE**
+## 🚀 Objectives
+1. **CMS Page**: 
+   - Build a page with a text field to store and update the main heading in a database.
+   - The design is flexible—feel free to innovate.
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+2. **Customer-Facing Page**:
+   - Design a pixel-perfect, responsive landing page as per the provided Figma.
+   - The heading is dynamic, while the rest of the content is static.
+   
+3. **API Integration**:
+   - Implement a POST API to save the CMS input to a database.
+   - Implement a GET API to fetch the data and display it on the landing page.
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+---
 
-Follow these steps:
+## 🛠️ Tech Stack
+- **Frontend**: React, TypeScript, Tailwind CSS
+- **Backend**: Node.js, Express.js
+- **Database**: MongoDB or any suitable DB
+- **Build Tool**: Vite
+- **UI Framework**: shadcn-ui
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+---
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## 🛠️ Installation & Setup
+To set up the project locally, follow these steps:
 
-# Step 3: Install the necessary dependencies.
-npm i
+1. **Clone the repository**:
+   ```bash
+   git clone https://github.com/dasupathi/BRYNK-LABS-ASSIGNMENT.git
+   cd BRYNK-LABS-ASSIGNMENT
+   ```
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+2. **Install dependencies**:
+   ```bash
+   npm install
+   ```
 
-**Edit a file directly in GitHub**
+3. **Run the development server**:
+   ```bash
+   npm run dev
+   ```
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+4. **API Endpoints**:
+   - POST API: `/api/set-heading`
+   - GET API: `/api/get-heading`
 
-**Use GitHub Codespaces**
+5. **Environment Variables**:
+   Set up a `.env` file with the following:
+   ```
+   DB_URI=<your-database-uri>
+   PORT=3000
+   ```
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+---
 
-## What technologies are used for this project?
+## 📄 Instructions
+1. **CMS Page**:
+   - Design the interface to input and save the main heading.
+   - Ensure the page is responsive and user-friendly.
 
-This project is built with:
+2. **Landing Page**:
+   - Follow the Figma design strictly for a pixel-perfect result.
+   - Use the GET API to display the dynamic heading.
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+3. **APIs**:
+   - Use a database table to store the heading.
+   - Fetch the heading dynamically for the landing page.
 
-## How can I deploy this project?
+---
 
-Simply open [Lovable](https://lovable.dev/projects/65b8c28f-6559-48af-a6ed-fcf5e68ad89c) and click on Share -> Publish.
+## 🏢 About Brynk Labs
+Brynk Labs operates in stealth mode and is backed by strong funding. Founded by IIT and ISB alumni, the team has professional experience from leading companies like Amazon, Livspace, Paytm, and Revolut.
 
-## Can I connect a custom domain to my Lovable project?
+---
 
-Yes it is!
+## 🔗 Resources
+- [Figma Design](#) (Replace with actual link)
+- [Documentation for APIs](#)
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+---
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🧑‍💻 Author
+Dasupathi - [GitHub Profile](https://github.com/dasupathi)
+
+---
+
+## 📝 License
+This project is licensed under the [MIT License](LICENSE).
